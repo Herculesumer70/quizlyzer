@@ -1,0 +1,150 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.auth-container.dark {
+  background: #0d1117;
+  color: white;
+}
+
+.auth-container.light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.auth-form {
+  background: inherit;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  color: inherit;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: inherit;
+  background-color: white;
+}
+
+.auth-container.dark .auth-form input {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #f9f9f9;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #00bcd4;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.auth-form button:hover {
+  transform: scale(1.03);
+  background: #0097a7;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -0.5rem 0 1rem;
+  font-size: 0.9rem;
+}
+
+/* Toggle Theme Switch <<<<------>>>> */
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #00bcd4;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.branding {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.quizlyzer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.quizlyzer-tagline {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #666;
+  margin: 0 auto 20px;
+  max-width: 300px;
+  line-height: 1.4;
+}

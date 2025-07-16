@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.app-page {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.logout-btn_ {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  color: #333;
+  font-size: 1rem;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.welcome {
+  margin-bottom: 2rem;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.prompt-box {
+  width: 60%;
+  max-width: 700px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+  background-color: #f0f0f0;
+}
+
+.generate-btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.generate-btn:hover {
+  transform: scale(1.05);
+  background-color: #0097a7;
+}
+
+.result-output {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  max-width: 700px;
+  margin-inline: auto;
+  font-size: 1rem;
+  color: #222;
+  background-color: #ffffffcc;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.save-view-controls {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.save-btn,
+.view-btn {
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.save-btn:hover,
+.view-btn:hover {
+  transform: scale(1.05);
+  background-color: #023e8a;
+}
+
+.controls__ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.generate-btn,
+.save-btn,
+.view-btn {
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.generate-btn {
+  background-color: #00bcd4;
+  color: white;
+}
+.generate-btn:hover {
+  transform: scale(1.05);
+  background-color: #0097a7;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+.save-btn:hover {
+  transform: scale(1.05);
+  background-color: #388e3c;
+}
+
+.view-btn {
+  background-color: #ff9800;
+  color: white;
+}
+.view-btn:hover {
+  transform: scale(1.05);
+  background-color: #f57c00;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  animation: pop 0.5s ease-in-out;
+}
+
+.app-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

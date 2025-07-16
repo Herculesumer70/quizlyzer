@@ -1,0 +1,104 @@
+/* Font and layout <- used for saved js file */
+.saved-page {
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f2f2f2, #d9e4f5);
+  min-height: 100vh;
+}
+
+.saved-page h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 1.5rem;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-controls select,
+.filter-controls input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+/* Each saved item box */
+.saved-item {
+  background: white;
+  border-left: 8px solid #00bcd4;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.saved-item:hover {
+  transform: scale(1.02);
+}
+
+.saved-item h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.saved-item pre,
+.saved-item ul {
+  background: #f9f9f9;
+  padding: 0.8rem;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.saved-item ul {
+  list-style: decimal inside;
+  padding-left: 1rem;
+}
+
+.item-meta {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.action-buttons button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.action-buttons button.edit {
+  background: #ffd54f;
+  color: #333;
+}
+
+.action-buttons button.delete {
+  background: #ef5350;
+  color: white;
+}
+
+.action-buttons button:hover {
+  opacity: 0.9;
+}
